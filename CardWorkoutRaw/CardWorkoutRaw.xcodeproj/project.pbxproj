@@ -13,6 +13,7 @@
 		A00CD6D729A11ED6005D1D57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A00CD6D529A11ED6005D1D57 /* LaunchScreen.storyboard */; };
 		A00CD6DF29A11FFE005D1D57 /* CardSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00CD6DE29A11FFE005D1D57 /* CardSelectionViewController.swift */; };
 		A00CD6E129A12722005D1D57 /* CWButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00CD6E029A12722005D1D57 /* CWButton.swift */; };
+		A00CD6E329A12BA7005D1D57 /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00CD6E229A12BA7005D1D57 /* RulesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A00CD6D829A11ED6005D1D57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A00CD6DE29A11FFE005D1D57 /* CardSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSelectionViewController.swift; sourceTree = "<group>"; };
 		A00CD6E029A12722005D1D57 /* CWButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWButton.swift; sourceTree = "<group>"; };
+		A00CD6E229A12BA7005D1D57 /* RulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				A00CD6D329A11ED6005D1D57 /* Assets.xcassets */,
 				A00CD6D529A11ED6005D1D57 /* LaunchScreen.storyboard */,
 				A00CD6D829A11ED6005D1D57 /* Info.plist */,
+				A00CD6E229A12BA7005D1D57 /* RulesViewController.swift */,
 			);
 			path = CardWorkoutRaw;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A00CD6E329A12BA7005D1D57 /* RulesViewController.swift in Sources */,
 				A00CD6CB29A11ED5005D1D57 /* AppDelegate.swift in Sources */,
 				A00CD6CD29A11ED5005D1D57 /* SceneDelegate.swift in Sources */,
 				A00CD6DF29A11FFE005D1D57 /* CardSelectionViewController.swift in Sources */,
