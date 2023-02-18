@@ -10,7 +10,6 @@ import UIKit
 class CWButton: UIButton {
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.configure()
     }
     
     // Every subclass will require this
@@ -18,20 +17,19 @@ class CWButton: UIButton {
         fatalError("init(coder:) has not been implemented")
     }
     
-    init(backgroundColor: UIColor, title: String) {
+    init(backgroundColor: UIColor, title: String, systemImage: String) {
         // Lay using constraints without frames
         super.init(frame: .zero)
-        self.backgroundColor = backgroundColor
-        setTitle(title, for: .normal)
-        configure()
-    }
-    
-    func configure() {
-        layer.cornerRadius = 8
-        titleLabel?.font = .systemFont(ofSize: 19, weight: .bold)
-        setTitleColor(.white, for: .normal)
         
-        // Use auto layout
+        // ios 15+
+        configuration = .tinted()
+        configuration?.title = title
+        configuration?.baseForegroundColor = backgroundColor
+        configuration?.baseBackgroundColor = backgroundColor
+        configuration?.cornerStyle = .medium
+        configuration?.image = UIImage(systemName: systemImage)
+        configuration?.imagePadding = 5
+        configuration?.imagePlacement = .leading
         translatesAutoresizingMaskIntoConstraints = false
     }
 }
