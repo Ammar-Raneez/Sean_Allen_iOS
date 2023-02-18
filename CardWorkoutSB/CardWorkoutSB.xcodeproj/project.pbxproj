@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A00CD6BD29A1188E005D1D57 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00CD6BC29A1188E005D1D57 /* Card.swift */; };
 		A084763F29A0EB1800F3C49B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A084763E29A0EB1800F3C49B /* AppDelegate.swift */; };
 		A084764129A0EB1800F3C49B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A084764029A0EB1800F3C49B /* SceneDelegate.swift */; };
 		A084764629A0EB1800F3C49B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A084764429A0EB1800F3C49B /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A00CD6BC29A1188E005D1D57 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		A084763B29A0EB1800F3C49B /* CardWorkoutSB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardWorkoutSB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A084763E29A0EB1800F3C49B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A084764029A0EB1800F3C49B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				A084763E29A0EB1800F3C49B /* AppDelegate.swift */,
 				A084764029A0EB1800F3C49B /* SceneDelegate.swift */,
 				A084765229A0ECF400F3C49B /* CardSelectionViewController.swift */,
+				A00CD6BC29A1188E005D1D57 /* Card.swift */,
 				A084764429A0EB1800F3C49B /* Main.storyboard */,
 				A084764729A0EB1A00F3C49B /* Assets.xcassets */,
 				A084764929A0EB1A00F3C49B /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				A084763F29A0EB1800F3C49B /* AppDelegate.swift in Sources */,
 				A084764129A0EB1800F3C49B /* SceneDelegate.swift in Sources */,
 				A084765329A0ECF400F3C49B /* CardSelectionViewController.swift in Sources */,
+				A00CD6BD29A1188E005D1D57 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
