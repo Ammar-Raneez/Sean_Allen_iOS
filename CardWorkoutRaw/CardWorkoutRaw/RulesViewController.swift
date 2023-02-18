@@ -57,12 +57,12 @@ class RulesViewController: UIViewController {
     func configureExerciseLabel() {
         view.addSubview(exerciseLabel)
         exerciseLabel.translatesAutoresizingMaskIntoConstraints = false
-        exerciseLabel.text = "♦️ = Jumping Jacks\n\n♣️ = Burpees\n\n❤️ = Sit-ups\n\n♠️ = Push-ups\n\n"
+        exerciseLabel.text = "♠️ = Push-ups\n\n❤️ = Sit-ups\n\n♣️ = Burpees\n\n♦️ = Jumping Jacks"
         exerciseLabel.font = .systemFont(ofSize: 19, weight: .semibold)
         exerciseLabel.numberOfLines = 0
         
         NSLayoutConstraint.activate([
-            exerciseLabel.topAnchor.constraint(equalTo: rulesLabel.bottomAnchor, constant: 25),
+            exerciseLabel.topAnchor.constraint(equalTo: rulesLabel.bottomAnchor, constant: 60),
             exerciseLabel.widthAnchor.constraint(equalToConstant: 200),
             exerciseLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
