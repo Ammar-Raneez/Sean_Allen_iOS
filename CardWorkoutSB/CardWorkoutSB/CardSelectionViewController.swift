@@ -17,9 +17,6 @@ class CardSelectionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.startTimer()
-        for button in self.buttons {
-            button.layer.cornerRadius = 8
-        }
     }
     
     // Once view dissappears

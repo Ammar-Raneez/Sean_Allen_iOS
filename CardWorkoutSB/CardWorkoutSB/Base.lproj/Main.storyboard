@@ -25,15 +25,15 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NaL-gR-5E4">
                                 <rect key="frame" x="62.666666666666686" y="561" width="260" height="50"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="260" id="tzP-1f-aAs"/>
                                     <constraint firstAttribute="height" constant="50" id="wVV-15-WcF"/>
                                 </constraints>
-                                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Stop!">
+                                <buttonConfiguration key="configuration" style="tinted" image="stop.circle" catalog="system" title="Stop!" cornerStyle="medium">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="19"/>
+                                    <color key="baseForegroundColor" systemColor="systemRedColor"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="stopButtontapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EWu-Ay-Q1s"/>
@@ -41,15 +41,15 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bLc-kj-I0N">
                                 <rect key="frame" x="62" y="627" width="115.00000000000001" height="50"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="5I7-Na-5tb"/>
                                     <constraint firstAttribute="width" constant="115" id="Hae-um-cg5"/>
                                 </constraints>
-                                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Restart">
+                                <buttonConfiguration key="configuration" style="tinted" image="arrow.clockwise" catalog="system" title="Restart" cornerStyle="dynamic">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="19"/>
+                                    <color key="baseForegroundColor" systemColor="systemGreenColor"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="restartButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m9S-PD-Q91"/>
@@ -57,15 +57,15 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vnb-fu-dyo">
                                 <rect key="frame" x="207" y="625" width="115" height="50"/>
-                                <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="115" id="AOc-oy-XQs"/>
                                     <constraint firstAttribute="height" constant="50" id="Dfa-oE-U8K"/>
                                 </constraints>
-                                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                <color key="tintColor" systemColor="systemBlueColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Rules">
+                                <buttonConfiguration key="configuration" style="tinted" image="list.bullet.clipboard" catalog="system" title="Rules" cornerStyle="medium">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="19"/>
+                                    <color key="baseForegroundColor" systemColor="systemBlueColor"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="VeE-1i-WzX" kind="presentation" id="YuE-vJ-XBV"/>
@@ -148,6 +148,9 @@
     </scenes>
     <resources>
         <image name="10C" width="691" height="1056"/>
+        <image name="arrow.clockwise" catalog="system" width="113" height="128"/>
+        <image name="list.bullet.clipboard" catalog="system" width="103" height="128"/>
+        <image name="stop.circle" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
