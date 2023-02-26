@@ -10,15 +10,12 @@ import SwiftUI
 struct FrameworkDetailView: View {
     var framework: Framework
     
-    // Bindings are needed to update
-    @Binding var isShowingDetailView: Bool
-    
     var body: some View {
         VStack {
             HStack {
                 Spacer()
                 Button {
-                    isShowingDetailView = false
+                    
                 } label: {
                     Image(systemName: "xmark")
                         .foregroundColor(Color(.label))
@@ -45,8 +42,8 @@ struct FrameworkDetailView: View {
     }
 }
 
-struct FrameworkDetailView_Previews: PreviewProvider {
+struct FramworkDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        FrameworkDetailView(framework: MockData.sampleFramework, isShowingDetailView: .constant(false))
+        FramworkDetailView(framework: MockData.sampleFramework)
     }
 }
