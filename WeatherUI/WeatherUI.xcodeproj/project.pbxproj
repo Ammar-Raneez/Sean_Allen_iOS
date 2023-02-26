@@ -12,6 +12,8 @@
 		A05DC38B29AB1FD60049820A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A05DC38A29AB1FD60049820A /* Assets.xcassets */; };
 		A05DC38E29AB1FD60049820A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A05DC38D29AB1FD60049820A /* Preview Assets.xcassets */; };
 		A05DC39529AB3A3C0049820A /* WeatherButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05DC39429AB3A3C0049820A /* WeatherButton.swift */; };
+		A05DC39729AB4E9A0049820A /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05DC39629AB4E9A0049820A /* WeatherModel.swift */; };
+		A05DC39929AB4FB30049820A /* enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05DC39829AB4FB30049820A /* enums.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		A05DC38A29AB1FD60049820A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A05DC38D29AB1FD60049820A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A05DC39429AB3A3C0049820A /* WeatherButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherButton.swift; sourceTree = "<group>"; };
+		A05DC39629AB4E9A0049820A /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		A05DC39829AB4FB30049820A /* enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enums.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 			children = (
 				A05DC38629AB1FD50049820A /* WeatherUIApp.swift */,
 				A05DC38829AB1FD50049820A /* ContentView.swift */,
+				A05DC39829AB4FB30049820A /* enums.swift */,
+				A05DC39629AB4E9A0049820A /* WeatherModel.swift */,
 				A05DC39429AB3A3C0049820A /* WeatherButton.swift */,
 				A05DC38A29AB1FD60049820A /* Assets.xcassets */,
 				A05DC38C29AB1FD60049820A /* Preview Content */,
@@ -142,6 +148,8 @@
 			files = (
 				A05DC38929AB1FD50049820A /* ContentView.swift in Sources */,
 				A05DC38729AB1FD50049820A /* WeatherUIApp.swift in Sources */,
+				A05DC39729AB4E9A0049820A /* WeatherModel.swift in Sources */,
+				A05DC39929AB4FB30049820A /* enums.swift in Sources */,
 				A05DC39529AB3A3C0049820A /* WeatherButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
