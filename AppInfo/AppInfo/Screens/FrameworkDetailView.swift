@@ -9,6 +9,7 @@ import SwiftUI
 
 struct FrameworkDetailView: View {
     var framework: Framework
+    var showDismiss: Bool = true
     
     // Bindings are needed to update
     @Binding var isShowingDetailView: Bool
@@ -16,7 +17,9 @@ struct FrameworkDetailView: View {
     
     var body: some View {
         VStack {
-            XDismissButton(isShowingDetailView: $isShowingDetailView)
+            if showDismiss {
+                XDismissButton(isShowingDetailView: $isShowingDetailView)
+            }
             Spacer()
 
             FrameworkTitleView(framework: self.framework)
