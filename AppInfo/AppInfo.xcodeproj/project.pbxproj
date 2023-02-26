@@ -12,8 +12,9 @@
 		A05DC3AB29AB62E80049820A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A05DC3AA29AB62E80049820A /* Assets.xcassets */; };
 		A05DC3AE29AB62E80049820A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A05DC3AD29AB62E80049820A /* Preview Assets.xcassets */; };
 		A05DC3B529AB76870049820A /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05DC3B429AB76870049820A /* Framework.swift */; };
-		A0AB01BE29AB846900C92C22 /* FramworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AB01BD29AB846900C92C22 /* FramworkDetailView.swift */; };
 		A0AB01C029AB859000C92C22 /* AFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AB01BF29AB859000C92C22 /* AFButton.swift */; };
+		A0AB01C229AB8E2000C92C22 /* FrameworkGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AB01C129AB8E2000C92C22 /* FrameworkGridViewModel.swift */; };
+		A0AB01C429AB907200C92C22 /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AB01C329AB907200C92C22 /* FrameworkDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,8 +24,9 @@
 		A05DC3AA29AB62E80049820A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A05DC3AD29AB62E80049820A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A05DC3B429AB76870049820A /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
-		A0AB01BD29AB846900C92C22 /* FramworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FramworkDetailView.swift; sourceTree = "<group>"; };
 		A0AB01BF29AB859000C92C22 /* AFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFButton.swift; sourceTree = "<group>"; };
+		A0AB01C129AB8E2000C92C22 /* FrameworkGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridViewModel.swift; sourceTree = "<group>"; };
+		A0AB01C329AB907200C92C22 /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +61,8 @@
 			children = (
 				A05DC3A629AB62E60049820A /* AppInfoApp.swift */,
 				A05DC3A829AB62E60049820A /* ContentView.swift */,
-				A0AB01BD29AB846900C92C22 /* FramworkDetailView.swift */,
+				A0AB01C129AB8E2000C92C22 /* FrameworkGridViewModel.swift */,
+				A0AB01C329AB907200C92C22 /* FrameworkDetailView.swift */,
 				A0AB01BF29AB859000C92C22 /* AFButton.swift */,
 				A05DC3B429AB76870049820A /* Framework.swift */,
 				A05DC3AA29AB62E80049820A /* Assets.xcassets */,
@@ -148,7 +151,8 @@
 			files = (
 				A05DC3A929AB62E60049820A /* ContentView.swift in Sources */,
 				A05DC3B529AB76870049820A /* Framework.swift in Sources */,
-				A0AB01BE29AB846900C92C22 /* FramworkDetailView.swift in Sources */,
+				A0AB01C429AB907200C92C22 /* FrameworkDetailView.swift in Sources */,
+				A0AB01C229AB8E2000C92C22 /* FrameworkGridViewModel.swift in Sources */,
 				A0AB01C029AB859000C92C22 /* AFButton.swift in Sources */,
 				A05DC3A729AB62E60049820A /* AppInfoApp.swift in Sources */,
 			);
