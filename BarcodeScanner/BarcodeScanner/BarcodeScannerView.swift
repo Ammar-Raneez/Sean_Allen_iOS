@@ -1,0 +1,37 @@
+//
+//  BarcodeScannerView.swift
+//  BarcodeScanner
+//
+//  Created by Ammar on 2023-02-27.
+//
+
+import SwiftUI
+
+struct BarcodeScannerView: View {
+    var body: some View {
+        NavigationView {
+            VStack {
+                Rectangle()
+                    .frame(maxWidth: .infinity, maxHeight: 300)
+                
+                Spacer().frame(height: 60)
+                
+                Label("Scanner Barcode", systemImage: "barcode.viewfinder")
+                    .font(.title)
+                
+                Text("Not Yet Scanned")
+                    .bold()
+                    .font(.largeTitle)
+                    .foregroundColor(.green)
+                    .padding()
+            }
+            .navigationTitle("Barcode Scanner")
+        }
+    }
+}
+
+struct BarcodeScannerView_Previews: PreviewProvider {
+    static var previews: some View {
+        BarcodeScannerView()
+    }
+}
