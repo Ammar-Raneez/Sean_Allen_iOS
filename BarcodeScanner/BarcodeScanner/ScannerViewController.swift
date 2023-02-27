@@ -8,8 +8,14 @@
 import UIKit
 import AVFoundation
 
+enum CameraError: String {
+    case invalidDeviceInput = "Something is wrong with the camera. We are unable to capture the input"
+    case invalidScannedValue = "The value scanned is not valid. This app scans EAN-8 and EAN-13."
+}
+
 protocol ScannerViewControllerDelegate: AnyObject {
     func didFind(barcode: String)
+    func didSurface(error: CameraError)
 }
 
 final class ScannerViewController: UIViewController {
@@ -27,8 +33,25 @@ final class ScannerViewController: UIViewController {
     // Handle case of trying to load into storyboard
     required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented") }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupCaptureSession()
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        guard let previewLayer = previewLayer else {
+            scannerDelegate?.didSurface(error: .invalidDeviceInput)
+            return
+        }
+
+        previewLayer.frame = view.layer.bounds
+    }
+    
     private func setupCaptureSession() {
         guard let videoCaptureDevice = AVCaptureDevice.default(for: .video) else {
+            self.scannerDelegate?.didSurface(error: CameraError.invalidDeviceInput)
             return
         }
         
@@ -38,12 +61,14 @@ final class ScannerViewController: UIViewController {
         do {
             try videoInput = AVCaptureDeviceInput(device: videoCaptureDevice)
         } catch {
+            self.scannerDelegate?.didSurface(error: CameraError.invalidDeviceInput)
             return
         }
 
         if self.captureSession.canAddInput(videoInput) {
             self.captureSession.addInput(videoInput)
         } else {
+            self.scannerDelegate?.didSurface(error: CameraError.invalidDeviceInput)
             return
         }
         
@@ -57,11 +82,13 @@ final class ScannerViewController: UIViewController {
             // Standard 8 digit or 13 digit barcodes
             metadataOutput.metadataObjectTypes = [.ean8, .ean13]
         } else {
+            self.scannerDelegate?.didSurface(error: CameraError.invalidDeviceInput)
             return
         }
 
         self.previewLayer = AVCaptureVideoPreviewLayer(session: self.captureSession)
         guard case self.previewLayer?.videoGravity = AVLayerVideoGravity.resizeAspectFill else {
+            self.scannerDelegate?.didSurface(error: CameraError.invalidDeviceInput)
             return
         }
 
@@ -74,17 +101,24 @@ final class ScannerViewController: UIViewController {
 extension ScannerViewController: AVCaptureMetadataOutputObjectsDelegate {
     func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
         guard let object = metadataObjects.first else {
+            self.scannerDelegate?.didSurface(error: CameraError.invalidScannedValue)
             return
         }
         
         guard let machineReadableObject = object as? AVMetadataMachineReadableCodeObject else {
+            self.scannerDelegate?.didSurface(error: CameraError.invalidScannedValue)
             return
         }
         
         guard let barcode = machineReadableObject.stringValue else {
+            self.scannerDelegate?.didSurface(error: CameraError.invalidScannedValue)
             return
         }
-        
+
+        // Normally, it continuously scans, and spits out the value multiple times. This stops once the value is read once
+        // self.captureSession.stopRunning()
+
+        // Finally found a barcode
         scannerDelegate?.didFind(barcode: barcode)
     }
 }

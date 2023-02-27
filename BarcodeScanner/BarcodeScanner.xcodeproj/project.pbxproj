@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A028ABAF29AC52130038F899 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A028ABAE29AC52130038F899 /* ScannerViewController.swift */; };
+		A028ABB129AC6A090038F899 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A028ABB029AC6A090038F899 /* ScannerView.swift */; };
 		A0AB01E429AC457F00C92C22 /* BarcodeScannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AB01E329AC457F00C92C22 /* BarcodeScannerApp.swift */; };
 		A0AB01E629AC457F00C92C22 /* BarcodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AB01E529AC457F00C92C22 /* BarcodeScannerView.swift */; };
 		A0AB01E829AC458100C92C22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0AB01E729AC458100C92C22 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		A028ABAE29AC52130038F899 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		A028ABB029AC6A090038F899 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
 		A0AB01E029AC457F00C92C22 /* BarcodeScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarcodeScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0AB01E329AC457F00C92C22 /* BarcodeScannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerApp.swift; sourceTree = "<group>"; };
 		A0AB01E529AC457F00C92C22 /* BarcodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerView.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 				A0AB01E329AC457F00C92C22 /* BarcodeScannerApp.swift */,
 				A0AB01E529AC457F00C92C22 /* BarcodeScannerView.swift */,
 				A028ABAE29AC52130038F899 /* ScannerViewController.swift */,
+				A028ABB029AC6A090038F899 /* ScannerView.swift */,
 				A0AB01E729AC458100C92C22 /* Assets.xcassets */,
 				A0AB01E929AC458100C92C22 /* Preview Content */,
 			);
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A028ABAF29AC52130038F899 /* ScannerViewController.swift in Sources */,
+				A028ABB129AC6A090038F899 /* ScannerView.swift in Sources */,
 				A0AB01E629AC457F00C92C22 /* BarcodeScannerView.swift in Sources */,
 				A0AB01E429AC457F00C92C22 /* BarcodeScannerApp.swift in Sources */,
 			);
