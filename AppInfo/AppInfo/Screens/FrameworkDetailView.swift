@@ -33,16 +33,23 @@ struct FrameworkDetailView: View {
                 .padding()
 
             Spacer()
-
-            Button {
-                viewModel.isShowingSafariView = true
-            } label: {
+            
+            // Opens the safari app
+            Link(destination: URL(string: viewModel.framework.urlString)!) {
                 AFButton(title: "Learn More")
             }
+
+            // Custom safari view controller -> embedded safari view
+//            Button {
+//                viewModel.isShowingSafariView = true
+//            } label: {
+//                AFButton(title: "Learn More")
+//            }
         }
-        .sheet(isPresented: $viewModel.isShowingSafariView, content: {
-            SafariView(url: URL(string: viewModel.framework.urlString)!)
-        })
+        // Custom safari view controller
+//        .sheet(isPresented: $viewModel.isShowingSafariView, content: {
+//            SafariView(url: URL(string: viewModel.framework.urlString)!)
+//        })
     }
 }
 
