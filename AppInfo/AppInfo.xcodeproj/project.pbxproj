@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A03DCC9429B58F3900F1684D /* FrameworkDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03DCC9329B58F3900F1684D /* FrameworkDetailViewModel.swift */; };
 		A05DC3A729AB62E60049820A /* AppInfoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05DC3A629AB62E60049820A /* AppInfoApp.swift */; };
 		A05DC3A929AB62E60049820A /* FrameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05DC3A829AB62E60049820A /* FrameworkGridView.swift */; };
 		A05DC3AB29AB62E80049820A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A05DC3AA29AB62E80049820A /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A03DCC9329B58F3900F1684D /* FrameworkDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailViewModel.swift; sourceTree = "<group>"; };
 		A05DC3A329AB62E60049820A /* AppInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A05DC3A629AB62E60049820A /* AppInfoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfoApp.swift; sourceTree = "<group>"; };
 		A05DC3A829AB62E60049820A /* FrameworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridView.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				A0AB01C329AB907200C92C22 /* FrameworkDetailView.swift */,
+				A03DCC9329B58F3900F1684D /* FrameworkDetailViewModel.swift */,
 			);
 			name = FrameworkDetailView;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 				A0AB01C029AB859000C92C22 /* AFButton.swift in Sources */,
 				A0AB01D629ABB71C00C92C22 /* FrameworkListView.swift in Sources */,
 				A05DC3A729AB62E60049820A /* AppInfoApp.swift in Sources */,
+				A03DCC9429B58F3900F1684D /* FrameworkDetailViewModel.swift in Sources */,
 				A0AB01C629AB9E2300C92C22 /* SafariView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

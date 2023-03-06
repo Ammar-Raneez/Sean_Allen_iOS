@@ -16,8 +16,7 @@ struct FrameworkListView: View {
                 ForEach(MockData.frameworks) { framework in
                     // Lists have their own navigation handler
                     NavigationLink(
-                        destination: FrameworkDetailView(framework: framework,
-                                                         showDismiss: false, isShowingDetailView: self.$viewModel.isShowingDetailView)
+                        destination:                     FrameworkDetailView(viewModel: FrameworkDetailViewModel(framework: viewModel.selectedFramework ?? MockData.sampleFramework, isShowingDetailView: $viewModel.isShowingDetailView))
                     ) {
                         FrameworkTitleView(
                             framework: framework,

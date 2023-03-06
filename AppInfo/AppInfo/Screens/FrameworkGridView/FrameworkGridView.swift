@@ -23,8 +23,10 @@ struct FrameworkGridView: View {
                 }
                 .navigationTitle("Apple Frameworks")
                 // fullScreenCover --> Full screen page
+                
+                // Passing down the view model requires observed object
                 .sheet(isPresented: $viewModel.isShowingDetailView) {
-                    FrameworkDetailView(framework: viewModel.selectedFramework ?? MockData.sampleFramework, isShowingDetailView: $viewModel.isShowingDetailView)
+                    FrameworkDetailView(viewModel: FrameworkDetailViewModel(framework: viewModel.selectedFramework ?? MockData.sampleFramework, isShowingDetailView: $viewModel.isShowingDetailView))
                 }
             }
         }
